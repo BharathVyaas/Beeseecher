@@ -1,0 +1,8 @@
+.container {
+  background-color: white;
+}
+
+.no_grab {
+  -webkit-user-drag: none;
+  cursor: default;
+}

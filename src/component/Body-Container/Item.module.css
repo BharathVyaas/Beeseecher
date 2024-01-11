@@ -1,0 +1,190 @@
+/* || UTILITY */
+
+.cursor_config {
+  cursor: pointer;
+}
+
+.no_grab {
+  -webkit-user-drag: none;
+  cursor: default;
+}
+
+/* END UTILITY */
+
+.card {
+  border: 1px solid gray;
+  box-shadow: gray;
+  width: 180px;
+  height: 320px;
+  overflow: hidden;
+  outline: 0.4rem solid rgba(192, 192, 192, 0.5);
+  border-radius: 0.5rem;
+}
+
+.card_figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 86%;
+  width: 100%;
+}
+
+.card_figure__img {
+  margin-inline: auto;
+  object-fit: fill;
+  transform-origin: center center;
+  transform: scale(2.2) translateY(34px);
+  clip-path: inset(10px 38px 46px 38px);
+}
+
+.card_figure__figcaption {
+  border-top: 2px solid gray;
+  margin-inline: auto;
+  width: 90%;
+  height: 20%;
+}
+
+.card_figure__figcaption p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.card_figure__figcaption p:first-child {
+  color: rgb(130, 0, 190);
+}
+
+.card_figure__figcaption p:last-child {
+  color: rgba(77, 128, 0, 0.8);
+}
+
+.rate {
+  display: flex;
+  margin-inline: auto;
+  width: 90%;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.rate p span {
+  display: block;
+}
+
+/* || FONT */
+
+.rate p span {
+  font-size: 0.8rem;
+}
+/* END FONT */
+
+/* || ADDITIONAL STYLES */
+
+.rate {
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.8rem;
+  background-color: rgba(77, 128, 0, 0.55);
+  border-end-end-radius: 0.5rem;
+}
+
+.rate p {
+  color: rgb(130, 0, 190);
+  font-weight: 700;
+}
+
+.rate p span {
+  color: rgba(255, 255, 255);
+}
+
+.rate p:first-child {
+  margin-left: -0.3rem;
+}
+
+.rate p:nth-child(2) {
+  padding-inline: 0.5rem;
+  border-inline: 1.4px solid white;
+}
+
+.rate p:last-child {
+  margin-right: -0.4rem;
+}
+
+/* || SCROOL BAR STYLES */
+
+.custom_scrollbar {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: gray;
+}
+
+.custom_scrollbar::-webkit-scrollbar {
+  width: 2px;
+}
+
+.custom_scrollbar::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.custom_scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* END SCROOL BAR */
+
+/* END ADDITIONAL STYLES */
+
+/* || RESPONSIVE STYLE */
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgb(130, 0, 190);
+  margin-bottom: 1.4rem;
+}
+
+.title span {
+  padding-right: 1rem;
+  border-bottom: 2.4px solid rgb(212, 98, 143);
+}
+
+.imgContainer {
+  display: flex;
+  margin-inline: auto;
+  gap: 1.4rem;
+}
+
+.image {
+  width: 18rem;
+  height: 18rem;
+}
+
+.discription {
+  color: rgb(130, 0, 190);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .title {
+    text-align: center;
+  }
+  .title span {
+    padding-right: 0;
+  }
+  .imgContainer {
+    margin-top: 4rem;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 650) {
+  .title {
+    text-align: center;
+  }
+  .discription {
+    text-align: center;
+  }
+}
+
+/* END RESPONSIVE */

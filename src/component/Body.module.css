@@ -1,0 +1,55 @@
+.main {
+  border: none;
+  margin-top: 1rem;
+  display: grid;
+  justify-content: space-evenly;
+  grid-auto-flow: dense;
+}
+
+.containerMain {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+  grid-auto-flow: dense;
+}
+
+.cursor_config {
+  cursor: pointer;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnContainer button {
+  margin-top: 4rem;
+  padding: 0.5rem 4rem;
+  background-color: rgb(130, 0, 195);
+  color: #fff;
+}
+
+/* nextPage BUTTON HANDLER */
+.btnContainer .nextPage {
+  background-color: rgba(130, 0, 195, 0.5);
+  cursor: not-allowed;
+}
+
+@media (max-width: 992px) {
+  .containerMain {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerMain {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .containerMain {
+    grid-template-columns: 1fr;
+  }
+}

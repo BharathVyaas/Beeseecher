@@ -1,0 +1,71 @@
+.CRUDContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+  padding: 0.6rem;
+  width: 100%;
+  max-height: 55px;
+  background-color: rgba(77, 128, 0, 0.55);
+}
+
+.AddContainer_btn {
+  color: white;
+  height: 100%;
+  border-radius: 0.4rem;
+  width: 12.6rem;
+  background-color: rgba(192, 192, 192);
+  padding: 0.4rem 2rem;
+}
+
+.SearchContainer_input {
+  width: 13rem;
+  height: 100%;
+  font-size: 1.1rem;
+  padding-left: 0.5rem;
+  border-radius: 0.3rem;
+  color: rgb(130, 0, 195);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.SearchContainer_input::placeholder {
+  font-size: 1rem;
+}
+
+.SearchContainer_serchedTitles {
+  max-height: 5rem;
+  background-color: rgba(192, 192, 192, 0.96);
+}
+
+.SearchContainer_serchedTitles p {
+  margin-inline: auto;
+  width: 80%;
+  color: rgb(130, 0, 195);
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.SearchContainer_serchedTitles:first-child p {
+  border-top: 5px solid white;
+}
+
+/* SCROOLBAR EFFECTS */
+
+.custom_scrollbar {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f0f0f0;
+}
+
+.custom_scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom_scrollbar::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.custom_scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* END SCROOLBAR */
